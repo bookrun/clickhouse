@@ -62,7 +62,7 @@ import (
   "gorm.io/gorm"
 )
 
-// refer to https://github.com/ClickHouse/clickhouse-go
+// refer to https://github.com/ClickHouse/clickhouse-go/v2
 var dsn = "tcp://localhost:9000?database=gorm&username=gorm&password=gorm&read_timeout=10&write_timeout=20"
 
 func main() {
