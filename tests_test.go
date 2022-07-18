@@ -6,7 +6,6 @@ import (
 	"os"
 	"time"
 
-	"github.com/bookrun/clickhouse"
 	"gorm.io/gorm"
 )
 
@@ -18,7 +17,7 @@ func init() {
 		dbDSN = "tcp://localhost:9942?database=gorm&username=gorm&password=gorm&read_timeout=10&write_timeout=20"
 	)
 
-	if DB, err = gorm.Open(clickhouse.Open(dbDSN), &gorm.Config{}); err != nil {
+	if DB, err = gorm.Open(Open(dbDSN), &gorm.Config{}); err != nil {
 		log.Printf("failed to connect database, got error %v", err)
 		os.Exit(1)
 	}

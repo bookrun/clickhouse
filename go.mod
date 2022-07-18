@@ -1,6 +1,6 @@
 module github.com/bookrun/clickhouse
 
-go 1.14
+go 1.16
 
 require (
 	github.com/ClickHouse/clickhouse-go/v2 v2.2.0
