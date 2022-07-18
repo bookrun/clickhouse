@@ -10,7 +10,7 @@ You can simply test your connection to your database with the following:
 
 ```go
 import (
-  "gorm.io/driver/clickhouse"
+  "github.com/bookrun/clickhouse"
   "gorm.io/gorm"
 )
 
@@ -40,7 +40,7 @@ func main() {
 
 ```go
 import (
-  "gorm.io/driver/clickhouse"
+  "github.com/bookrun/clickhouse"
   "gorm.io/gorm"
 )
 
